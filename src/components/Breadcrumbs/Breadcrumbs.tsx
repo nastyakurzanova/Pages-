@@ -3,13 +3,13 @@ import { Link, useLocation } from "react-router-dom";
 import {FaChevronRight} from "react-icons/fa6";
 import {FaHome} from "react-icons/fa";
 
-// interface SelectedAudiences {
-//     name:string,
-//     info:string
-//    }
+interface SelectedAudiences {
+    name:string,
+    info:string
+   }
    
 
-const Breadcrumbs = ({ selectedAudiences, setSelectedAudiences }) => {
+const Breadcrumbs = ({ selectedAudiences, setSelectedAudiences }:{ selectedAudiences: SelectedAudiences, setSelectedAudiences: Function }) => {
 
     const location = useLocation()
 

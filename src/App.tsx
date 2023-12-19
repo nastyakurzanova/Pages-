@@ -24,7 +24,7 @@ function App() {
 
                     <div className="content-wrapper">
 
-                        <Breadcrumbs selectedAudiences={selectedAudiences} setSelectedAudiences={setSelectedAudiences}/>
+                        <Breadcrumbs selectedAudiences={selectedAudiences!} setSelectedAudiences={setSelectedAudiences}/>
 
                         <Routes>
 

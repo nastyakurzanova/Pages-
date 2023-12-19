@@ -1,12 +1,12 @@
 import "./SearchBar.sass"
 import {FaSearch} from "react-icons/fa";
 
-// type SearchBarProps = {
-//     query: string;
-//     setQuery: (value: string) => void;
-//    };
+type SearchBarProps = {
+    query: string;
+    setQuery: (value: string) => void;
+   };
 
-const SearchBar = ({ query, setQuery }) => {
+const SearchBar = ({ query, setQuery }:SearchBarProps) => {
 
     const handleChange = (value: string) => {
         setQuery(value)
