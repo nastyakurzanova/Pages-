@@ -28,7 +28,7 @@ const AudiencesList = () => {
             }
 
             const raw = await response.json()
-            const Audiences: Audiences[] = raw["Audiences"]
+            const Audiences: Audiences[] = raw["info"]
 
             setAudiences(Audiences)
             setIsMock(false)
